@@ -1,0 +1,156 @@
+
+body{
+    background-color: #8CC461;
+}
+.container{
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
+.child{
+    position: relative;
+    margin-top: 4%;
+    margin-bottom: 1rem;
+    .Vector{
+        position: absolute;
+        top: 32%;
+        left: 43%;
+    }
+}
+.again{
+    .play-again{
+        background-color: white;
+        height: 40px;
+        width: 180px;
+        font-size: 18px;
+        padding: 10px 20px;
+        text-transform: uppercase;
+        text-decoration: none;
+        font-weight: 550;
+        border:2px solid white;
+        border-radius: 10px;
+        color: rgb(120, 120, 120);
+        &:hover{
+            cursor: pointer;
+            transform: scale(1.1);
+        }
+    }
+}
+h1{
+    color: white;
+    font-size: 80px;
+    line-height: 15px;
+}
+p{
+    line-height: 30px;
+    color: white;
+    font-size: 35px;
+    margin-top: none;
+}
+
+        li::marker {
+            color: #ffa943;
+            font-size: 1.5rem;
+        }
+
+.game{
+    display: flex;
+   
+}
+.rule1 {
+    position: absolute;
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    padding: 0.6rem 2.5rem;
+    bottom: 2rem;
+    right: 2rem;
+    font-size: 1.3rem;
+    font-weight: 525;
+    border-radius: 10px;
+    &:hover {
+        cursor: pointer;
+        transform: scale(1.1);
+    }
+}
+.rulebook{
+    border: 6px solid white;
+    position: absolute;
+    border-radius: 10px;
+    background: #004429;
+    color: white;
+    height:100%;
+    width:100%;
+    line-height: 20px;
+    font-size: 18px;
+    left: 75%;
+    padding: 2rem;
+    li{
+        padding: 5px;
+    }
+}
+.close{
+    text-align: end;
+    position: absolute;
+    left: 95%;
+    top: -7%;
+    .cross{
+        background-color: red;
+        border-radius: 50%;
+        border: 6px solid white;
+        height: 60px;
+        width: 60px;
+        &:hover{
+            cursor: pointer;
+            transform: scale(1.1);
+        }
+    }
+}
+.close-btn{
+    position: absolute;
+    background-color: red;
+    border-radius: 50%;
+    border: 5px solid white;
+    padding: 10px;
+    left: 61%;
+    top: 22%;
+    cursor: pointer;
+}
+.modal{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 5%;
+    left:30%;
+    display: grid;
+    place-items: center;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+.modal-container{
+    background-color: #004429;
+    border-radius: 0.5rem;
+    border: 5px solid white;
+    width: 20%;
+    padding: 20px;
+    color: white;
+    line-height: auto;
+}
+.modal-header{
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 2rem 1rem;
+    
+}
+.modal-heading{
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    color: white;;
+}
+.show-modal{
+    opacity: 1;
+    pointer-events: initial;
+}
+
